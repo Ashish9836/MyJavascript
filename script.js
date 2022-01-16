@@ -97,5 +97,21 @@ if(!undefined){
 
 
 
+// -----------------part6----------------------------------
+// part6 deals with function in js very important as DRY principle in prgramming so that we can break our complex code into smaller and understandable one see below for more example 
+
+
+// declaring a funtion to say hello
+function  sayHello(name){
+  name = "changed_name";
+  console.log("hello!",name);
+}
+
+sayHello("ashish");
+
+// observe below carefully as name is changed inside func but not outside
+let name = "mac";
+sayHello(name);
+console.log(name);
 
 
