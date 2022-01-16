@@ -53,7 +53,47 @@ console.log(ans);
 
 
 
+// -----part5 done--------------------
+// boolean datatype in JAVASCRIPT
+ans = (9>8)
+console.log(ans); // true
+ans = (9<8)
+console.log(ans); // false
 
+if(-1){
+  console.log("negative act as true");
+}
+if(2){
+  console.log("positive act as true");
+}
+if(0){
+  console.log("0 act as false");
+}
+if(2.777){
+  console.log("2.777 are true");
+}
+if(-2.777){
+  console.log("(-2.777) act true");
+}
+if("justString"){
+  console.log("string more than one len true");
+}
+if(""){
+  console.log("string with zero len false");
+}
+if(undefined){
+  console.log("undefined act as false");
+}
+if(null){
+  console.log("null act as true")
+}
+if(!(null)){
+  console.log("!null act true")
+}
+if(!undefined){
+  console.log("!undefined act true");
+}
+// ------------part5 done------------
 
 
 
