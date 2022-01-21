@@ -314,6 +314,28 @@
 
 
 // SPLICE method first para => begining index , second=> no of deletion from first para index and rest para are the values that are inserted from first para index
-let arr = [5,6]
-arr.splice(0,1,1,2,3);
-console.log(arr);
+// let arr = [5,6]
+// arr.splice(0,1,1,2,3);
+// console.log(arr);
+
+
+// ITERABLES
+// itr are those where we can apply for of loop like array, string
+
+// ARRAY LIKE 
+// where we can apply .length and can access using index
+// for eg string
+
+
+// SET in JS order is not sorted as in c++ and it cannot contains duplicate
+// let mySet = new Set();
+// mySet.add(2);
+// mySet.add(4);
+// mySet.add(0);
+// mySet.add(2);
+
+// if(mySet.has(2)){
+//   console.log("2 is present");
+// }
+
+// console.log(mySet);
