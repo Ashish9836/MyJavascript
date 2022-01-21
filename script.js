@@ -1,4 +1,19 @@
 // Welcome to JAVASCRIPT
+
+
+
+// netsacpe navigator
+// 1995
+// first by brendan eitch => mocha
+// livescript lauched further named as JAVASCRIPT
+// microsoft built jscript
+
+// js is backward compatible
+
+// bable helps to modify new version js into old for browsers
+
+
+
 // ------part1 starting----
 // just adding string + num
 let ans = "2"+1;
@@ -114,4 +129,141 @@ let name = "mac";
 sayHello(name);
 console.log(name);
 
+// -----------part6 -------- done
 
+
+// -----------part7-------------------
+// comments for understanding code others for future developer
+
+console.log("hello js double quote");
+console.log('hello js single quote');
+console.log(`hello js template`)
+
+
+
+// variable name rules
+// -> space cannot be used in var name
+// $ _ can be used
+
+// camelcase is recommended like  firstName 
+
+
+// let const BLOCK SCOPE
+
+// no error
+// var game = "a";
+// var game = "p";
+// console.log(game);
+
+// // error here
+// var gm = "gm1";
+// let gm = "gm2";
+
+// // error here
+// let name = 1;
+// let name = 2;
+
+
+// ------PART7 done-------------
+
+
+
+
+// PART 8
+// ABOUT STRING----------------------
+
+
+// STRING IN js
+
+// trim function
+// trim doesnot change string originally same with lowercase, uppercase
+// these return a new string with trimed of old
+let string1 = "   mystring  ";
+let trimed_string1 = string1.trim();
+let upper_string1 = string1.toUpperCase();
+let lower_string1 = string1.toLowerCase();
+
+// console.log("->trimed",trimed_string1,"upper->",upper_string1,"lower->",lower_string1);
+
+
+let str = "helloMyString";
+
+// //   slice(a,b) a=> starting index from where you want to start removing and b is last index+1 where string must be ends
+// // for eg ashish 0,3 will remove ash since a's index 0 and h's index 3-1
+// str = "ashish";
+// console.log(str.slice(0,3));
+
+// console.log(str.slice(1)); if second arg is not passed then by default str.length
+
+
+
+// let suppose you want to change any num into string 
+let num = 102;
+console.log(typeof num,num);
+num = num+"";
+console.log(typeof num,num);
+//  second option is String(any num);
+
+
+// string into num
+num = +"12";
+console.log(typeof num);
+// second option is Number("12");
+
+// PART-8 DONE
+
+
+
+
+// part-9 begins
+// let max_num_in_js = Number.MAX_SAFE_INTEGER;
+// let min_num_in_js = Number.MIN_SAFE_INTEGER;
+// console.log(max_num_in_js,min_num_in_js);
+
+
+// if(undefined===undefined){
+//   console.log("undefined is equal to undefined");
+// }
+// let store = null;
+// if(store===null){
+//   console.log("null is equal to null");
+// }
+// if(store===undefined){
+//   console.log("undefined is equal to null");
+// }
+// console.log(typeof undefined,typeof null); // here undefined, object
+
+
+
+// ABOUT ARRAY in js
+
+// let arr = [7,2,3,4,5];
+// console.log(typeof arr); // object
+// // since typeof array is also object so how to differentiate so for that purpose we can use Array.isArray(arr)
+// if(Array.isArray(arr)){
+//   console.log("given is array");
+// }
+
+
+// // for removing element from array from last we use arr.pop() and it also returns that last element which was removed
+// // for removing element from array from beginning we use array.shift() and returns that element that was deleted
+
+// const stored_from_shifting = arr.shift();
+// console.log(stored_from_shifting)
+
+
+// Destructring arrays
+let arr = [1,2,3,4,5,6];
+// a =1 b=2 c=3 d = rest in form of array
+let [a,b,c,...d] = arr;
+console.log(a,b,c,d);
+
+// filter method in array
+const newArray = arr.filter((x)=>{
+  return x%2!=0;
+})
+console.log(newArray)
+
+// reduce method in array be careful first para => callback func and second para=> intialisation of accumulator and its value by default is 0;
+const sumArr = arr.reduce((accumulator,curr)=>curr+accumulator);
+console.log(sumArr);
