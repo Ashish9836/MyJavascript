@@ -339,3 +339,52 @@
 // }
 
 // console.log(mySet);
+
+
+
+// MAP IN JS
+// let map = new Map();
+// map.set("name","ashish");
+// console.log(map.get("name"));
+// for (key of map){
+//   console.log(key);
+// }
+
+
+// USE OF ? IN JS
+// const obj = {
+//   name:"hello",
+//   // info:{name1:"hello1"}
+// }
+// // ? tells first check if exists then proceed only
+// console.log(obj?.info?.name1);
+
+
+
+
+// //-------------------------// proto 
+// const person = {
+//   human: true,
+//   Earth: true,
+//   Mars:false
+// }
+
+
+// const man = Object.create(person);
+// man.name = "Man1";
+// // justing asking for name 
+// console.log(man.name);
+
+// // demanding for Earth var which was in person but you will ask this will give undefined but not see on line num 373 we created using Object.create(person) so if no demanded var is found in man object then it will check in person
+// console.log(man.Earth);
+
+
+// // lets console whole man 
+// console.log(man);
+// // inside man object during console you can find [[Prototype]] object whcih contains all method, var of object person
+
+
+
+
+
+
