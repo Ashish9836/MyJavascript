@@ -387,4 +387,68 @@
 
 
 
+// function myfunc(){
+
+// }
+// // function in js has its own methods and also we can use Prototype as extra space in the form of object 
+// console.log(myfunc.name)
+
+// myfunc.prototype.work = "software developer";
+// myfunc.prototype.aim  = "just to code nothing else";
+// console.log(myfunc.prototype);
+
+
+
+
+// making object using new 
+function HolaObjectMaker(){
+}
+
+HolaObjectMaker.prototype.talk = "myNameIsHola";
+
+let funcObj = new HolaObjectMaker();
+
+// since funcObj is made through new keyword so function prototype'object can be used directly 
+console.log(funcObj.talk)
+
+
+
+
+
+
+
+
+// CLASS in js 
+class Animal{
+constructor(name, age){
+this.name = name;
+this.age = age;
+}
+
+speak(){
+  return `${this.name} is speaking!`;
+}
+
+eat(){
+  return `${this.name} is eating!`;
+}
+}
+
+
+class Dog extends Animal{
+
+constructor(name, age, bark){
+super(name, age);
+this.bark = bark;
+}
+}
+
+let myDog = new Dog("tommy",12,true);
+console.log(myDog);
+
+// you can see here i am calling for eating to myDog since it herits Animal's properties due to inheritance so if their own eat function is not find in class Dog then it will search eat funtion inside Animal class
+console.log(myDog.eat());
+
+
+
 
